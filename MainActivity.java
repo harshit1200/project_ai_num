@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         newMatch();
         sharedPreferences=this.getSharedPreferences("com.example.aiapp_2022", Context.MODE_PRIVATE);
         int[][]dataFrame=dataPrep(); //dataPrep function returns a two-dimenssional array
-        double slope=LR.getSlope(dataFrame); //LR class, which provides slope on invoking getSlope
+        double slope=LR.getSlope(dataFrame); 
         new AlertDialog.Builder(this)
                // .setIcon() //your custom icon
                 .setTitle("Performance")
